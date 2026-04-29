@@ -3,6 +3,12 @@
 
 name: CI
 
+concurrency:
+  group: ci-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+permissions: {}
+
 on:
   pull_request:
     branches: [main]
