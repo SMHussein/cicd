@@ -22,7 +22,7 @@ on:
         description: Name of the artifact produced by the build job.
         value: ${{ jobs.build.outputs.artifact-name }}
 
-premissions:
+permissions:
   contents: read
 
 jobs:
