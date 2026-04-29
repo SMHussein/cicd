@@ -29,5 +29,5 @@ jobs:
       - uses: aws-actions/configure-aws-credentials@ec61189d14ec14c8efccab744f656cffd0e33f37 # v6.1.0
         with:
           aws-region: us-west-2
-          role-to-assume: arn:aws:iam::117327731035:role/lead-lotus-cicd
+          role-to-assume: arn:aws:iam::117327731035:role/Saifo
       - run: aws s3 sync dist/ s3://lead-lotus-cicd/ --delete
